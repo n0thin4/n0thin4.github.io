@@ -1,0 +1,30 @@
+:root{
+    --top-bar-size:min(100px, 10vh, 10vw);
+    --unimportant:1;
+}
+.open-btn{
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:var(--top-bar-size);
+    width:var(--top-bar-size);
+    background-color: red;
+    cursor:pointer;
+    font-weight:bold;
+    transition-duration:500ms;
+    transition-timing-function:ease;
+    transition-property:color;
+    transition-delay: 0s;
+}
+.unimportant{
+    opacity: var(--unimportant);
+    visibility:visible;
+    transition-duration:500ms;
+    transition-timing-function:ease;
+    transition-property:opacity;
+    transition-delay: 0s;
+}
+
+body{
+    margin:0px;
+}
