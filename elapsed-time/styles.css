@@ -1,6 +1,8 @@
 :root{
     --top-bar-size:min(100px, 10vh, 10vw);
     --unimportant:1;
+    --scroll-pad:20px;
+    --side-bar-width:min(30vw, 500px);
 }
 .open-btn{
     position:fixed;
@@ -24,7 +26,39 @@
     transition-property:opacity;
     transition-delay: 0s;
 }
+/*
+side-bar will take up half the space if there is 
 
+*/
+#side-bar{
+    position:fixed;
+    /*should be hidden if the side-bar is closed*/
+    top:var(--top-bar-size);
+    width:min(30%, 400px);
+    height:calc(100% - var(--top-bar-size));
+}
+@media (max-width: 600px) {
+    #side-bar{
+        width:30%
+    }
+}
+@media (max-width: 400px) {
+    #side-bar{
+        width:100%
+    }
+}
+.side-task{
+    /*side task is used for tasks that appear in the side-bar
+    each one has a different background-color color and fonr-family
+    */
+    background-color:black;
+    color:white;
+    width:100%;
+}
+.side-task-time{
+    border-top:5px;
+    color:rgba(0,0,0,.3);
+}
 body{
     margin:0px;
 }

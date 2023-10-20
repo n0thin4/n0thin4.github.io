@@ -6,7 +6,10 @@
     <script defer src="../general-packages/textFit.js?j=o"></script>
     <script defer src="main.js?h=12l"></script>
     <body onmouseenter="showUnimportant()" ontouchstart="">
-        <div class='open-btn' id="side-open-btn" onclick="toggleSideBar()">≡</div>
-        testing testing
+        <div class='open-btn' id="side-open-btn" onclick="toggleSideBar()" hidden>≡</div>
+        <!--just work on the sidebar right now ight (functionality comes later)-->
+        <div id="side-bar">
+            <div class="side-task"><div class="side-task-time"></div></div>
+        </div>
     </body>
 </html>

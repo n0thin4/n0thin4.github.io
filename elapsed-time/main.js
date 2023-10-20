@@ -47,16 +47,14 @@ function closeSideBar(){
     if (!sideBarOpen) return
     clearTimes(sideEv)
     sideBarOpen=false;
-    let sBtn=id('side-open-btn');
-    sBtn.classList.add('unimportant');
     
 }
 function openSideBar(){
     if (sideBarOpen) return
     clearTimes(sideEv)
     sideBarOpen=true
-    let sBtn=id('side-open-btn')
-    sBtn.classList.remove('unimportant')
+    
 }
+
 //plan: peak a pixel out, then have all of the things peak out if they are above a ceartian height
 fitSideOpenBtn()

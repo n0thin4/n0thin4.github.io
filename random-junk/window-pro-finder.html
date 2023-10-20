@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>window proportion finder</title>
+    </head>
+    <body onresize="update()">
+        <div>Height: <span id="height"></span></div>
+        <div>Width: <span id="width"></span></div>
+    </body>
+    <script>
+        var hei=document.getElementById('height')
+        var wid=document.getElementById('width')
+        function update(){
+            hei.textContent=window.innerHeight
+            wid.textContent=window.innerWidth
+        }
+        update()
+    </script>
+</html>
