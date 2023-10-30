@@ -3,6 +3,7 @@
     --unimportant:1;
     --scroll-pad:20px;
     --side-bar-width:min(30vw, 500px);
+    --unimportant-vis:visible;
 }
 .open-btn{
     position:fixed;
@@ -20,7 +21,7 @@
 }
 .unimportant{
     opacity: var(--unimportant);
-    visibility:visible;
+    visibility: var(--unimportant-vis);
     transition-duration:500ms;
     transition-timing-function:ease;
     transition-property:opacity;
@@ -34,7 +35,8 @@ side-bar will take up half the space if there is
     position:fixed;
     /*should be hidden if the side-bar is closed*/
     top:var(--top-bar-size);
-    width:min(30%, 400px);
+    width:min(20%, 400px);
+    overflow-y:auto;
     height:calc(100% - var(--top-bar-size));
 }
 @media (max-width: 600px) {
